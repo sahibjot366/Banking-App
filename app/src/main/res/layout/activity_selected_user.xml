@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    tools:context=".SelectedUser">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="129dp"
+        android:layout_height="111dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/uidselectedUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#009688"
+
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/nameselectedUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uidselectedUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#009688"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/emailselectedUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameselectedUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#009688"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/balanceselectedUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailselectedUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#009688"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/monetTransferButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/balanceselectedUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:drawableTop="@drawable/transfer"
+        android:text="Click to \nTransfer Money"
+        android:textColor="#FFC107"
+        app:cornerRadius="70dp" />
+
+</RelativeLayout>

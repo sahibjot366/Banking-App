@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/MainActivityimageView"
+        android:layout_width="380dp"
+        android:layout_height="400dp"
+        android:scaleType="center"
+        android:layout_marginHorizontal="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/MainActivitytextView"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/transactionimg" />
+
+    <Button
+        android:id="@+id/viewCustomerButton"
+        android:layout_width="210dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/MainActivityimageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/customericon"
+        android:text="View All Users"
+        app:backgroundTint="#009688"
+        app:cornerRadius="7sp" />
+
+    <TextView
+        android:id="@+id/MainActivitytextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction App"
+        android:textAllCaps="true"
+        android:textColor="#009688"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+
+         />
+
+    <Button
+        android:id="@+id/viewTransactionsButton"
+        android:layout_width="210dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/viewCustomerButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/paise"
+        android:text="View All Transactions" />
+</RelativeLayout>
